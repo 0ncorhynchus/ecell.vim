@@ -9,10 +9,6 @@ set cpo&vim
 set list
 set listchars=tab:>-,trail:~
 
-highlight WhitespaceEOL ctermbg=red guibg=red
-highlight WhitespaceBraces ctermbg=red guibg=red
-highlight SpecialKey ctermbg=red guibg=red
-highlight JISX0208Space term=underline ctermbg=red guibg=red
 augroup UndesirableSpaceHighlights
   autocmd!
   autocmd VimEnter,WinEnter * match WhitespaceEOL /\s\+$/
